@@ -4,6 +4,7 @@ import Question from "../Question/Question"
 import ScorePage from "../ScorePage/ScorePage"
 import {Redirect, Link} from "react-router-dom"
 import Message from "../Message/Message"
+import '../MainPage/MainPage.scss'
 
 function MainPage(){
 
