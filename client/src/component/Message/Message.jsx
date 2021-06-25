@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import  '../Message/Message.scss'
 
 
 const Message = (props) =>{
@@ -7,6 +8,6 @@ const Message = (props) =>{
           props.setShowMessage(false)
       }, 2000);  
     }, [])
-    return <p>{props.msg}</p>
+    return <p className="messageTab">{props.msg}</p>
 }
 export default Message;

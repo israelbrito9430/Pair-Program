@@ -3,7 +3,6 @@
   text-align: center;
   padding-top: 5em;
 }
-
 .question__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,8 +15,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .question h2 {
   margin: 3em auto 1em;
-}
-/*# sourceMappingURL=Question.css.map */
+}/*# sourceMappingURL=Question.css.map */

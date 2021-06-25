@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "ScorePage.scss"
-    ],
-    "names": [],
-    "file": "ScorePage.css"
-}
+{"version":3,"sources":["ScorePage.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,cAAA;EACA,aAAA;AACF","file":"ScorePage.css"}

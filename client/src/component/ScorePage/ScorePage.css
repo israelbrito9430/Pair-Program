@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=ScorePage.css.map */
+.scorePage {
+  margin-top: 11em;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  height: 100vh;
+}/*# sourceMappingURL=ScorePage.css.map */

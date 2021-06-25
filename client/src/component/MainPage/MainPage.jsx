@@ -46,7 +46,7 @@ function MainPage(){
         }
        
     return gameEnded ? (
-        <h1 className="score__card">Your score is {score} </h1>
+        <h1 className="score__card">Your score is {score}!!! </h1>
         
         ):(
             question.length > 0 ? (
