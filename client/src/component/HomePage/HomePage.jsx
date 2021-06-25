@@ -6,8 +6,9 @@ import '../HomePage/HomePage.scss'
 function HomePage() {
     return (
     <section className="home" >
+       <h1 className="home--title">TRIVIA</h1>
         <div >
-            <h1>Test Your Knowledge</h1>
+            <h2 className="home--slogan">Test Your Knowledge!</h2>
             <Link to="/trivia">
             <button>Enter</button>
             </Link>

@@ -1,4 +1,5 @@
 import React from 'react'
+import question from './Question.scss'
 
 function Question({ handleAnswer, data:{correct_answer, incorrect_answers, question, nextQuestion}}) {
     const shuffledAnswer=[correct_answer, ...incorrect_answers].sort(()=> Math.random() - 0.5);
@@ -18,6 +19,7 @@ function Question({ handleAnswer, data:{correct_answer, incorrect_answers, quest
 		<button>{answerOption.answerText}</button>
 	))}
     </div> */}
+        <div className="question__buttons">
         {shuffledAnswer.map(answer =>(
             // <Button className={ : ""} onClick={()=>handleAnswer(answer)} answer={answer}/> 
     
@@ -25,6 +27,7 @@ function Question({ handleAnswer, data:{correct_answer, incorrect_answers, quest
           onClick={()=>handleAnswer(answer)} dangerouslySetInnerHTML={{__html: answer}}/>
          
             ))}
+        </div>
         </div>
     )
    
