@@ -1,12 +1,8 @@
 import React from 'react'
-import question from './Question.scss'
 
-function Question({ handleAnswer, data:{correct_answer, incorrect_answers, question, nextQuestion}}) {
+
+function Question({ handleAnswer, data:{correct_answer, incorrect_answers, question}}) {
     const shuffledAnswer=[correct_answer, ...incorrect_answers].sort(()=> Math.random() - 0.5);
-
-    // const Button = ({ answer, className}) =>(
-      
-    // )
    
     return (
         
@@ -14,16 +10,10 @@ function Question({ handleAnswer, data:{correct_answer, incorrect_answers, quest
         <h1 className="title">MAYHORT TRIVIA</h1>
         <h2 dangerouslySetInnerHTML={{__html: question}}/>
 
-        {/* <div className='answer-section'>
-	{questions[currentQuestion].answerOptions.map((answerOption, index) => (
-		<button>{answerOption.answerText}</button>
-	))}
-    </div> */}
         <div className="question__buttons">
         {shuffledAnswer.map(answer =>(
-            // <Button className={ : ""} onClick={()=>handleAnswer(answer)} answer={answer}/> 
     
-          <button className= {`${correct_answer===answer ? "bg-purple-300": "bg-white"}bg-white`}
+          <button
           onClick={()=>handleAnswer(answer)} dangerouslySetInnerHTML={{__html: answer}}/>
          
             ))}
@@ -33,13 +23,5 @@ function Question({ handleAnswer, data:{correct_answer, incorrect_answers, quest
    
 }
 
-// function shuffle(arr){
-//     for(let i=0; i<20; i++){
-//         const id1 = Math.floor(Math.random() * arr.length);
-//         const id2 = Math.floor(Math.random() * arr.length);
-
-
-//     }
-// }
 
 export default Question

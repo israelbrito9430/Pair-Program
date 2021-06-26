@@ -1,8 +1,7 @@
 import React, {Component, useState, useEffect} from 'react'
 import axios from "axios"
 import Question from "../Question/Question"
-import ScorePage from "../ScorePage/ScorePage"
-import {Redirect, Link} from "react-router-dom"
+import {Redirect} from "react-router-dom"
 import Message from "../Message/Message"
 import '../MainPage/MainPage.scss'
 

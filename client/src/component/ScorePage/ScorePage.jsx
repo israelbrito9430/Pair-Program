@@ -1,5 +1,5 @@
 import React from 'react'
-import scss from './ScorePage.scss'
+
 
 function ScorePage({score}) {
     return (
